@@ -111,8 +111,7 @@ def modinfo_combiner():
     for key, value in extra_dependencies.items():
         dependencies += f'    <Mod id="{key}" title="{value}"/>\n'
 
-    new_file = f'''
-<?xml version="1.0" encoding="UTF-8"?>
+    new_file = f'''<?xml version="1.0" encoding="UTF-8"?>
 <Mod id="{MOD_ID}" version="{MOD_VERSION}">
   <Properties>
     <Name>{MOD_NAME}</Name>
